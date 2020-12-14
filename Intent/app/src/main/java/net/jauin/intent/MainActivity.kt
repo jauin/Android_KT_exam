@@ -18,9 +18,9 @@ class MainActivity : AppCompatActivity() {
         btn_a.setOnClickListener {
 
             val intent = Intent(this,SubActivity::class.java)
-//            intent.putExtra("msg", tv_sendMsg.text.toString())
+            intent.putExtra("msg", tv_sendMsg.text.toString())
             startActivity(intent)
-
+//            finish() // 자기자신 소멸
 
         }
     }

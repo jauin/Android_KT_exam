@@ -10,9 +10,8 @@ class SubActivity : AppCompatActivity() {
         setContentView(R.layout.activity_sub)
 
         val tv_getMsg : TextView = findViewById(R.id.tv_getMsg)
-        tv_getMsg.text="뭐냐"
-        
-        if(intent.hasExtra("msg")) {
+
+        if(intent.hasExtra("msg")){
 
             tv_getMsg.text = intent.getStringExtra("msg")
 
